@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инженерный калькулятор</title>
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <button onclick="toggleRadDeg()">rad</button>
+        <button onclick="calculateSin()">sin</button>
+        <button onclick="calculateCos()">cos</button>
+        <button onclick="calculateTan()">tan</button>
+        <button onclick="calculateCtg()">ctg</button>
+
+        <button onclick="calculatePower()">x<sup>y</sup></button>
+        <button onclick="calculateLg()">lg</button>
+        <button onclick="calculateLn()">ln</button>
+        <button onclick="appendToDisplay('(')">(</button>
+        <button onclick="appendToDisplay(')')">)</button>
+
+        <button class ="blue" onclick="calculateSquare()">x<sup>2</sup></button>
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button class ="blue" onclick="backspace()">←</button>
+        <button class ="blue" onclick="appendToDisplay('%')">%</button>
+        <button class ="blue" onclick="appendToDisplay('/')">&divide;</button>
+
+        <button class ="blue" onclick="calculateInverse()">x<sup>-1</sup></button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button class ="blue" onclick="appendToDisplay('*')">&times;</button>
+
+        <button class ="blue" onclick="calculateSqrt()">√x</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button class ="blue" onclick="appendToDisplay('-')">-</button>
+
+        <button class ="blue" onclick="calculateFactorial()">x!</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button class ="blue" onclick="appendToDisplay('+')">+</button>
+
+        <button class ="blue" onclick="insertPi()">π</button>
+        <button class ="blue" onclick="appendToDisplay('e')">e</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button class ="blue" onclick="appendToDisplay('.')">,</button>
+        <button class="orange" onclick="calculate()">=</button>
+    </div>
+
+    <script src = "js/func.js"></script>
+</body>
+</html>
